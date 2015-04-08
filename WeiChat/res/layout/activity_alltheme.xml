@@ -1,0 +1,379 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_match">
+<RelativeLayout 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="visible" >
+        <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <AutoCompleteTextView
+                android:id="@+id/theme_search"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:completionThreshold="1"
+                android:ems="10" 
+                android:layout_weight="1"
+                android:textSize="12sp"
+                android:hint="@string/alltheme_themesearch"/>
+            <ImageView
+                android:id="@+id/alltheme_search"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:onClick="search_iv_go"
+                android:src="@drawable/search_iv_go"
+                />
+       </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/alltheme_menu"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/allthemeheight"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:visibility="visible" >
+            <LinearLayout
+                android:id="@+id/science_layout"
+                android:onClick="goHandsome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="@dimen/allthemewidth"
+                    android:layout_height="@dimen/allthemeheight"
+                    android:background="@drawable/theme_ll_go"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <ImageView
+                        android:layout_width="@dimen/alltheme_btn_img_width"
+                        android:layout_height="@dimen/alltheme_btn_img_height"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ali_052" />
+
+                    <TextView
+                        android:id="@+id/science_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="@string/alltheme_handsome"
+                        android:textColor="@color/orange"
+                        android:textSize="22sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/news_layout"
+                android:onClick="goPolicy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="@dimen/allthemewidth"
+                    android:layout_height="@dimen/allthemeheight"
+                    android:background="@drawable/theme_ll_go"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <ImageView
+                        android:layout_width="@dimen/alltheme_btn_img_width"
+                        android:layout_height="@dimen/alltheme_btn_img_height"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ali_042" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="@string/alltheme_policy"
+                        android:textColor="@color/orange"
+                        android:textSize="22sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/update_layout"
+                android:onClick="goJoke"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="@dimen/allthemewidth"
+                    android:layout_height="@dimen/allthemeheight"
+                    android:background="@drawable/theme_ll_go"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <ImageView
+                        android:layout_width="@dimen/alltheme_btn_img_width"
+                        android:layout_height="@dimen/alltheme_btn_img_height"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ali_040" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_gravity="center"
+                        android:text="@string/alltheme_joke"
+                        android:textColor="@color/orange"
+                        android:textSize="22sp" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/alltheme_menu"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/allthemeheight"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:visibility="visible" >
+            <LinearLayout
+                android:id="@+id/science_layout"
+                android:onClick="goEconomy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="@dimen/allthemewidth"
+                    android:layout_height="@dimen/allthemeheight"
+                    android:background="@drawable/theme_ll_go"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <ImageView
+                        android:layout_width="@dimen/alltheme_btn_img_width"
+                        android:layout_height="@dimen/alltheme_btn_img_height"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ali_052" />
+
+                    <TextView
+                        android:id="@+id/science_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="@string/alltheme_economy"
+                        android:textColor="@color/orange"
+                        android:textSize="22sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/news_layout"
+                android:onClick="goBeauty"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="@dimen/allthemewidth"
+                    android:layout_height="@dimen/allthemeheight"
+                    android:background="@drawable/theme_ll_go"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <ImageView
+                        android:layout_width="@dimen/alltheme_btn_img_width"
+                        android:layout_height="@dimen/alltheme_btn_img_height"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ali_042" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="@string/alltheme_beauty"
+                        android:textColor="@color/orange"
+                        android:textSize="22sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/update_layout"
+                android:onClick="goPE"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="@dimen/allthemewidth"
+                    android:layout_height="@dimen/allthemeheight"
+                    android:background="@drawable/theme_ll_go"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <ImageView
+                        android:layout_width="@dimen/alltheme_btn_img_width"
+                        android:layout_height="@dimen/alltheme_btn_img_height"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ali_040" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_gravity="center"
+                        android:text="@string/alltheme_pe"
+                        android:textColor="@color/orange"
+                        android:textSize="22sp" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/alltheme_menu"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/allthemeheight"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:visibility="visible" >
+
+       
+          
+
+            <LinearLayout
+                android:id="@+id/science_layout"
+                android:onClick="goKaty"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="@dimen/allthemewidth"
+                    android:layout_height="@dimen/allthemeheight"
+                    android:background="@drawable/theme_ll_go"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <ImageView
+                        android:layout_width="@dimen/alltheme_btn_img_width"
+                        android:layout_height="@dimen/alltheme_btn_img_height"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ali_052" />
+
+                    <TextView
+                        android:id="@+id/science_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="@string/alltheme_katy"
+                        android:textColor="@color/orange"
+                        android:textSize="22sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/news_layout"
+                android:onClick="goShayne"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="@dimen/allthemewidth"
+                    android:layout_height="@dimen/allthemeheight"
+                    android:background="@drawable/theme_ll_go"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <ImageView
+                        android:layout_width="@dimen/alltheme_btn_img_width"
+                        android:layout_height="@dimen/alltheme_btn_img_height"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ali_042" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="@string/alltheme_shayne"
+                        android:textColor="@color/orange"
+                        android:textSize="22sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/superstar_layout"
+                android:onClick="goSuperstar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="@dimen/allthemewidth"
+                    android:layout_height="@dimen/allthemeheight"
+                    android:background="@drawable/theme_ll_go"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <ImageView
+                        android:layout_width="@dimen/alltheme_btn_img_width"
+                        android:layout_height="@dimen/alltheme_btn_img_height"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ali_057" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_gravity="center"
+                        android:text="@string/alltheme_superstar"
+                        android:textColor="@color/orange"
+                        android:textSize="22sp" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>
+</ScrollView>

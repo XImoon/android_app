@@ -1,0 +1,15 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+   	xmlns:muzili="http://schemas.android.com/apk/res/com.ximoon.weichat"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <com.ximoon.weichat.GIFView
+        android:layout_width="224dp"
+        android:layout_height="256dp"
+        muzili:gif_welcome="@drawable/welcome2"
+        android:layout_centerInParent="true"
+        android:text="@string/hello_world" />
+
+</RelativeLayout>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/info_ll_bg"
+     >
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+	
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:paddingRight="10dp"
+                android:singleLine="true"
+                android:text="为什么我刚买的电信卡 开通流通 总是说我操作失败 我按“Y”... "
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                 />
+
+            <TextView
+                android:id="@+id/content"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:paddingRight="10dp"
+                android:text="为什么我刚买的电信卡 开通流通 总是说我操作失败 我按“Y”确定开通流量 系统回复我说操作失败"
+                android:textSize="10sp" />
+            <ImageView
+            android:id="@+id/pic"
+            android:layout_width="@dimen/imagewidth"
+            android:layout_height="@dimen/imageheight"
+            android:layout_marginLeft="3dp"
+            android:layout_marginTop="2dp"
+            android:paddingTop="2dp"
+            android:paddingLeft="2dp"
+            android:paddingRight="2dp"
+            android:paddingBottom="3dp"
+            android:background="@drawable/user_avatar_bg"
+            android:src="@drawable/b09" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal"
+                android:paddingRight="10dp" >
+
+                <TextView
+                    android:id="@+id/time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="5dp"
+                    android:text="2011年12月12日"
+                    android:textSize="10sp" />
+                <TextView
+                    android:id="@+id/name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="5个回答"
+                    android:textSize="10sp" />
+                <LinearLayout 
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="right"
+                    >
+                    	<ImageView
+		                    android:layout_width="wrap_content"
+		                    android:layout_height="wrap_content"
+		                    android:gravity="right"
+		                    android:src="@drawable/iask_reward"
+		                    android:layout_gravity="center_vertical|right"
+		                    android:textSize="10sp" />
+		                <TextView
+		                    android:id="@+id/layer"
+		                    android:layout_width="wrap_content"
+		                    android:layout_height="wrap_content"
+		                    android:text="100"
+		                    android:textColor="@color/yellow_font_color"
+		                    android:textSize="10sp" />
+                    
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>

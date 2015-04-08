@@ -1,0 +1,22 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+	<Button
+        android:id="@+id/recommands_back_btn"
+        android:layout_width="35dp"
+        android:layout_height="@dimen/menuheight"
+        android:background="@drawable/back_btn_bg"
+        android:clickable="true"
+        android:focusable="true"
+        android:visibility="visible" />
+	
+    <ListView
+        android:id="@+id/lv_recommands"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+         />
+
+</LinearLayout>

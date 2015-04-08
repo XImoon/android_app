@@ -1,0 +1,50 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/match_parent"
+    android:background="@drawable/bg"
+    >
+    <ImageView
+	    android:id="@+id/main_iv_icon"
+	    style="@style/wrap_content"
+	    android:layout_centerHorizontal="true"
+	    android:src="@drawable/agr"/>
+    
+    <EditText 
+        android:id="@+id/main_et_username" 
+        style="@style/login_et"
+    	android:layout_below="@id/main_iv_icon"
+    	android:hint="@string/input_username"
+    	android:text="a"
+        />
+    <EditText 
+        android:id="@+id/main_et_password" 
+        style="@style/login_et"
+    	android:layout_below="@+id/main_et_username"
+    	android:hint="@string/input_password"
+    	android:text="a"
+        />
+    <Button
+        android:id="@+id/main_bt_board"
+        style="@style/match_wrap"
+      	android:layout_centerHorizontal="true"
+      	android:layout_margin="20dp"
+      	android:text="@string/user_board"
+      	android:background="@color/blue_bt_login"
+      	android:onClick="login"
+      	android:clickable="false"
+    	android:layout_below="@+id/main_et_password"/>
+    
+    <Button
+        android:id="@+id/main_bt_register"
+        style="@style/wrap_content"
+      	android:layout_alignParentRight="true"
+      	android:layout_alignParentBottom="true"
+      	android:text="@string/user_register"
+      	android:background="#00000000"
+      	android:layout_marginBottom="5dp"
+      	android:layout_marginRight="15dp"
+      	android:textStyle="italic"
+      	android:textColor="@color/blue_bt_register"
+      	android:onClick="register"/>
+
+</RelativeLayout>

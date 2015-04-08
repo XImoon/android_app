@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/info_ll_bg"
+     >
+     <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:orientation="horizontal">
+     <Button
+        android:id="@+id/addtheme_back_btn"
+        android:layout_width="35dp"
+        android:layout_height="@dimen/menuheight"
+        android:background="@drawable/back_btn_bg"
+        android:clickable="true"
+        android:focusable="true"
+        android:visibility="visible" />
+     <Button
+         android:id="@+id/addtheme_btn_done"
+         android:layout_weight="1"
+         android:layout_width="60dp"
+         android:gravity="right"
+        android:layout_height="@dimen/menuheight"
+        android:text="完成"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        android:background="#00000000"/>
+     </LinearLayout>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+	
+            <EditText
+                android:id="@+id/et_title"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:paddingRight="10dp"
+                android:singleLine="true"
+                android:hint="请输入标题内容,最多可输入50字"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:lines="1"
+                 />
+
+            <EditText
+                android:id="@+id/et_content"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:paddingRight="10dp"
+                android:hint="请输入标题内容，最多可输入200字"
+                android:textSize="10sp" />
+            <ImageView
+                android:id="@+id/iv_show"
+                android:layout_width="@dimen/imagewidth"
+                android:layout_height="@dimen/imageheight"
+                android:layout_marginLeft="3dp"
+            android:layout_marginTop="2dp"
+            android:paddingTop="2dp"
+            android:paddingLeft="2dp"
+            android:paddingRight="2dp"
+            android:paddingBottom="3dp"
+            android:background="@drawable/user_avatar_bg"
+            android:src="@drawable/b09" />
+            <Button
+            android:id="@+id/add_bt_pic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="本地图片"
+            android:textSize="15sp"
+            android:paddingTop="2dp"
+            android:paddingLeft="2dp"
+            android:paddingRight="2dp"
+            android:paddingBottom="3dp"
+            android:background="@drawable/add_bg_selector"
+             />
+            <Button
+            android:id="@+id/add_bt_take"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="拍照上传"
+            android:textSize="15sp"
+            android:paddingTop="2dp"
+            android:paddingLeft="2dp"
+            android:paddingRight="2dp"
+            android:paddingBottom="3dp"
+            android:background="@drawable/add_bg_selector"
+             />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal"
+                android:paddingRight="10dp" >
+
+                
+                
+            </LinearLayout>
+        </LinearLayout>
+        
+    </LinearLayout>

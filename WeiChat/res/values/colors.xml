@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="blue_bt_login">#1FBAF3</color>
+    <color name="blue_bt_register">#00AEEF</color>
+    <color name="background_gray">#FCFCFC</color>
+    <color name="title_bar_bg">#00CCFF</color>
+    <color name="white">#ffffffff</color>
+    <color name="yellow_warning">#FFFF99</color>
+    <color name="yellow_font_color">#FF6600</color>
+    <color name="transparent">#00000000</color>
+    <color name="gray">#666666</color>
+    <color name="dark_gray">#cfcfcf</color>
+    <!-- 表格的边框灰色线条 -->
+    <color name="light_gray">#f4f4f4</color>
+    <!-- 表格的灰色背景色值 -->
+    <color name="param_group_bg_color">#f7f7f7</color>
+    <color name="param_child_bg_color">#ebebeb</color>
+    <!--  -->
+    <color name="blue">#6699CC</color>
+    <color name="more_gray">#333333</color>
+    <color name="black">#000000</color>
+    <color name="green">#009933</color>
+    <color name="iask_text_green">#4a9a2b</color>
+    <color name="internationnal_font_gray_color">#cccccc</color>
+    <color name="pop_chat_orange">#ff7900</color>
+    <color name="package_layout_bottom_gray">#9ca3a9</color>
+    <color name="introduction_color_1">#c9cdd0</color>
+    <color name="introduction_color_2">#d4d7dc</color>
+    <color name="introduction_color_click">#d0f0d7</color>
+    <color name="iask_ask_bg">#f0f0f0 </color>
+    <color name="iask_answer_question_count_color">#ff5a00 </color>
+    <color name="iask_bootom_bar_color_normal">#302f2f </color>
+    <color name="iask_bootom_font_color_normal">#9a9a9a </color>
+    <color name="iask_bootom_font_color_press">#2c30f2 </color>
+    <color name="iask_answer_title_color_normal">#c7c7c7</color>
+    <color name="iask_answer_item_color_normal">#f2f2f2</color>
+    <color name="iask_answer_item_color_press">#e7e5e5</color>
+    <color name="iask_person_common_font_color">#070707</color>
+    <color name="iask_person_answer_title_color">#4b4b4b</color>
+    <color name="iask_person_answer_content_color">#5d5d5d</color>
+    <color name="main_page_submenu_bg_color">#1a913f</color>
+    <color name="main_page_submenu_bg_color_press">#157533</color>
+    <color name="list_bg_color">#f5f5f5</color>
+
+    <!--
+    <color name="holo_gray_color">#262c31</color>
+    <color name="holo_gray_color2">#4c5255</color>
+    <color name="holo_actionbar_bg">#303030</color>
+    -->
+    <!-- setmessage -->
+
+    <color name="setmessage_bar_bg">#99FFFF</color>
+    <color name="voicetext">#CCFFFF</color>
+    <color name="resulttext">#57465B</color>
+    <color name="bg_color">#EDEDED</color>
+    <color name="contents_text">#ff000000</color>
+    <color name="help_button_view">#ffcccccc</color>
+    <color name="help_view">#ff404040</color>
+    <color name="possible_result_points">#c0ffff00</color>
+    <color name="result_minor_text">#ffc0c0c0</color>
+    <color name="result_points">#c000ff00</color>
+    <color name="result_view">#b0000000</color>
+    <color name="sbc_header_text">#ff808080</color>
+    <color name="sbc_list_item">#fffff0e0</color>
+    <color name="sbc_snippet_text">#ff4b4b4b</color>
+    <color name="status_view">#50000000</color>
+    <color name="black">#000000</color>
+    <color name="yellow_font_color">#FF6600</color>
+    <color name="orange">#FF6600</color>
+    <color name="viewfinder_laser">#ffff0000</color>
+    <color name="viewfinder_mask">#60000000</color>
+    <color name="header">#58567D</color>
+    <color name="grgray">#686868</color>
+
+</resources>

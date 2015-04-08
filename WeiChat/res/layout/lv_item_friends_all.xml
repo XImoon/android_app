@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="vertical" >
+    
+    <TextView
+        android:id="@+id/all_catalog"
+        style="@style/match_wrap"
+        android:background="#E0E0E0"
+        android:textColor="#454545"
+        android:layout_weight="1.0"
+        android:paddingLeft="5dip"
+        android:paddingTop="5dip"
+        android:paddingBottom="5dip"
+        android:text="A"/>
+
+    <RelativeLayout
+        style="@style/match_wrap"
+        android:layout_weight="1.0"
+        android:layout_margin="10dp" >
+
+        <ImageView
+            android:id="@+id/item_tv_friends_all_icon"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="10dp"
+            android:src="@drawable/ic_launcher" />
+
+        <RelativeLayout
+            android:id="@+id/item_rl_friends_all_msg"
+            style="@style/wrap_content"
+            android:layout_alignBottom="@id/item_tv_friends_all_icon"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/item_tv_friends_all_icon"
+            android:padding="5dp" >
+
+            <TextView
+                android:id="@+id/item_tv_friends_all_ip"
+                style="@style/wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:text="@string/friend_ip"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/item_tv_friends_all_port"
+                style="@style/wrap_content"
+                android:layout_alignLeft="@id/item_tv_friends_all_ip"
+                android:layout_alignParentBottom="true"
+                android:text="@string/friend_port"
+                android:textSize="16sp" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/item_tv_friends_all_isonline"
+            style="@style/wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/msg_tip_box"
+            android:gravity="center|fill_vertical"
+            android:text="@string/user_offline"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,65 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/add_rl_title"
+        style="@style/match_wrap"
+        android:background="@drawable/title_bar" >
+
+        <Button
+            style="@style/wrap_content"
+            android:layout_centerVertical="true"
+            android:background="#00000000"
+            android:drawableLeft="@drawable/back_forward"
+            android:drawablePadding="10dp"
+            android:onClick="back"
+            android:padding="10dp"
+            android:text="@string/back_forward"
+            android:textColor="#ffffff"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/add_tv_user"
+            style="@style/wrap_content"
+            android:layout_centerInParent="true"
+            android:padding="10dp"
+            android:text="@string/navigation_add"
+            android:textColor="#ffffff"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <com.ximoon.weichat.view.ClearEditText
+        android:id="@+id/add_ce_search"
+        style="@style/match_wrap"
+        android:layout_below="@id/add_rl_title"
+        android:layout_gravity="center"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/search_bar_edit_selector"
+        android:drawableLeft="@drawable/search_bar_icon_normal"
+        android:hint="@string/navigation_search"
+        android:singleLine="true"
+        android:textSize="15.0dip" />
+    
+    <Button 
+        style="@style/match_wrap"
+        android:id="@+id/add_bt_find"
+        android:layout_margin="30dp"
+        android:layout_below="@id/add_ce_search"
+        android:text="@string/navigation_add"
+        android:background="@drawable/op_bg_selector"
+        android:gravity="center|bottom"
+        android:onClick="find"
+        android:textSize="20sp"/>
+    
+    <ListView 
+        style="@style/match_wrap"
+        android:id="@+id/add_lv_friends"
+        android:layout_below="@id/add_bt_find"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        ></ListView>
+
+</RelativeLayout>

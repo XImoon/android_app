@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/title_bar_layout"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+   >
+   <ImageView
+	    android:id="@+id/childIcon"
+	    android:layout_width="30dp"
+	    android:layout_height="30dp"
+	    android:layout_centerVertical="true"
+	    android:layout_marginLeft="5dp"
+	    android:src="@drawable/lh" />
+   <RelativeLayout
+       	android:layout_toRightOf="@+id/childIcon" 
+        android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+       >
+	<TextView
+	    android:id="@+id/childName" 
+	    android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:layout_marginLeft="5dp"
+    	android:text="木子李"
+    	android:textSize="15sp"
+	    />
+	<TextView
+	    android:id="@+id/onlinesum"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_below="@id/childName"
+	    android:text="@string/user_motto" 
+	    android:layout_marginLeft="5dp"
+	    android:textSize="10sp"
+	    />
+
+	
+	</RelativeLayout>
+</RelativeLayout>

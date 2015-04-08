@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/theme_top_theme"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/menuheight"
+    android:layout_alignParentTop="true"
+    android:layout_gravity="left"
+    android:background="@drawable/ajo" >
+
+    <Button
+        android:id="@+id/theme_back_btn"
+        android:layout_width="35dp"
+        android:layout_height="@dimen/menuheight"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/back_btn_bg"
+        android:clickable="true"
+        android:focusable="true"
+        android:visibility="visible" />
+
+    <Button
+        android:id="@+id/theme_bt_theme"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/menuheight"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/theme_back_btn"
+        android:background="@drawable/theme_btn_bg"
+        android:clickable="true"
+        android:focusable="true"
+        android:text="katy吧"
+        android:textColor="#ffffff"
+        android:textSize="18sp"
+        android:visibility="visible" />
+    </RelativeLayout>

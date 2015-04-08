@@ -1,0 +1,203 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/setmessage_bar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/title_bar_bg"
+        android:clickable="true"
+        android:fillViewport="true"
+        android:focusable="true"
+        android:visibility="visible" >
+
+        <TextView
+            android:id="@+id/setmessage_bar_canclemessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:onClick="cancelSetMessage"
+            android:clickable="true"
+            android:text="@string/canclemessage"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/setmessage_bar_setmessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="@string/setmymessage"
+            android:textColor="@color/white"
+            android:textSize="22sp" />
+
+        <TextView
+            android:id="@+id/title_bar_completemessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:onClick="completeSetMessage"
+            android:clickable="true"
+            android:text="@string/completemessage"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <ScrollView
+        style="@style/match_parent"
+        android:layout_below="@id/setmessage_bar_layout"
+        android:background="@drawable/bg_android_v7_4" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:clickable="true"
+            android:focusable="true" >
+
+            <RelativeLayout
+                android:id="@+id/setmessage_rl_icon"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:layout_marginTop="5dp" >
+
+                <ImageView
+                    android:id="@+id/setmessage_iv_icon"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/sz" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/setmessage_rl_username"
+                style="@style/match_wrap"
+                android:layout_below="@id/setmessage_rl_icon"
+                android:layout_marginTop="20dp" >
+
+                <TextView
+                    android:id="@+id/setmessage_tv_username"
+                    style="@style/message_tip"
+                    android:text="@string/friend_username" />
+
+                <TextView
+                    android:id="@+id/setmessage_tv_username_show"
+                    style="@style/message_content" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/setmessage_rl_nickname"
+                style="@style/match_wrap"
+                android:layout_below="@id/setmessage_rl_username"
+                android:layout_marginTop="20dp" >
+
+                <TextView
+                    android:id="@+id/setmessage_tv_nickname"
+                    style="@style/message_tip"
+                    android:text="@string/friend_nickname" />
+
+                <EditText
+                    android:id="@+id/setmessage_et_nickname"
+                    style="@style/message_content"
+                    android:maxEms="1"
+                    android:maxLength="15"
+                    android:singleLine="true" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/setmessage_rl_sex"
+                style="@style/match_wrap"
+                android:layout_below="@id/setmessage_rl_nickname"
+                android:layout_marginTop="20dp" >
+
+                <TextView
+                    android:id="@+id/setmessage_tv_sex"
+                    style="@style/message_tip"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/select_sex" />
+
+                <RadioGroup
+                    android:id="@+id/setmessage_rg_sex"
+                    style="@style/message_content"
+                    android:orientation="horizontal" >
+
+                    <RadioButton
+                        android:id="@+id/setmessage_rb_boy"
+                        style="@style/wrap_content"
+                        android:checked="true"
+                        android:paddingRight="40dp"
+                        android:text="@string/user_boy" />
+
+                    <RadioButton
+                        android:id="@+id/setmessage_rb_girl"
+                        style="@style/wrap_content"
+                        android:paddingRight="40dp"
+                        android:text="@string/user_girl" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/setmessage_rl_age"
+                style="@style/match_wrap"
+                android:layout_below="@id/setmessage_rl_sex"
+                android:layout_marginTop="20dp" >
+
+                <TextView
+                    android:id="@+id/setmessage_tv_age"
+                    style="@style/message_tip"
+                    android:text="@string/user_age" />
+
+                <TextView
+                    android:id="@+id/setmessage_tv_age_show"
+                    style="@style/message_content" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/setmessage_rl_phone"
+                style="@style/match_wrap"
+                android:layout_below="@id/setmessage_rl_age"
+                android:layout_marginTop="20dp" >
+
+                <TextView
+                    android:id="@+id/setmessage_tv_phone"
+                    style="@style/message_tip"
+                    android:text="@string/user_phone" />
+
+                <EditText
+                    android:id="@+id/setmessage_et_phone_show"
+                    style="@style/message_content"
+                    android:maxEms="1"
+                    android:maxLength="15"
+                    android:singleLine="true" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/setmessage_rl_sign"
+                style="@style/match_wrap"
+                android:layout_below="@id/setmessage_rl_phone"
+                android:layout_marginTop="20dp" >
+
+                <TextView
+                    android:id="@+id/setmessage_tv_sign"
+                    style="@style/message_tip"
+                    android:text="@string/user_motto" />
+
+                <EditText
+                    android:id="@+id/setmessage_et_sign_show"
+                    style="@style/message_content"
+                    android:maxEms="1"
+                    android:maxLength="15"
+                    android:singleLine="true" />
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

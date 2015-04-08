@@ -1,0 +1,28 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    
+    <dimen name="register">25dp</dimen>
+    <dimen name="register_normal">20dp</dimen>
+	<dimen name="small">15dp</dimen>
+	<dimen name="slidingmenu_offset">60dp</dimen>
+    <dimen name="shadow_width">15dp</dimen>
+    <dimen name="qqname">15dp</dimen>
+    <dimen name="qqsign">20dp</dimen>
+    <dimen name="qqvip">20dp</dimen>
+    <dimen name="setmessage">18dp</dimen>
+    
+	<dimen name="imagewidth">60dp</dimen>
+	<dimen name="imageheight">60dp</dimen>
+	<dimen name="themeheight">200dp</dimen>
+	<dimen name="submenuheight">23dp</dimen>
+	<dimen name="menuheight">50dp</dimen>
+	<dimen name="allthemewidth">120dp</dimen>
+    <dimen name="allthemeheight">160dp</dimen>
+	<dimen name="alltheme_btn_img_width">60dp</dimen>
+    <dimen name="alltheme_btn_img_height">60dp</dimen>
+    
+    
+</resources>

@@ -1,0 +1,103 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        style="@style/match_wrap"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/title_bar" >
+
+        <Button
+            style="@style/wrap_content"
+            android:layout_centerVertical="true"
+            android:background="#00000000"
+            android:drawableLeft="@drawable/back_forward"
+            android:drawablePadding="10dp"
+            android:padding="10dp"
+            android:text="@string/back_forward"
+            android:textColor="#ffffff"
+            android:textSize="18sp"
+            android:onClick="back" />
+
+        <TextView
+            style="@style/wrap_content"
+            android:layout_centerInParent="true"
+            android:padding="10dp"
+            android:text="@string/user_register"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/register_et_username"
+        style="@style/register_et"
+        android:background="@color/background_gray"
+        android:hint="@string/input_username" />
+
+    <EditText
+        android:id="@+id/register_et_password"
+        style="@style/register_et"
+        android:background="@color/background_gray"
+        android:hint="@string/input_password" />
+
+    <EditText
+        android:id="@+id/register_et_conpassword"
+        style="@style/register_et"
+        android:background="@color/background_gray"
+        android:hint="@string/countersign_password" />
+
+    <!-- <LinearLayout style="@style/register_sort" >
+
+        <TextView
+            style="@style/register_hint"
+            android:layout_weight="0"
+            android:text="@string/select_sex" />
+
+        <RadioGroup
+            android:id="@+id/register_rg_sex"
+            style="@style/width_weight"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/register_rb_boy"
+                style="@style/wrap_content"
+                android:paddingRight="60dp"
+                android:checked="true"
+                android:text="@string/user_boy" />
+
+            <RadioButton
+                android:id="@+id/register_rb_girl"
+                style="@style/wrap_content"
+                android:paddingRight="60dp"
+                android:text="@string/user_girl" />
+        </RadioGroup>
+    </LinearLayout>
+    
+    <EditText
+        android:id="@+id/register_et_nickname"
+        style="@style/register_et"
+        android:hint="@string/input_nickname" />
+    
+    <EditText
+        android:id="@+id/register_et_motto"
+        style="@style/register_et"
+        android:hint="@string/input_motto" />
+    
+    <EditText
+        android:id="@+id/register_et_phone"
+        style="@style/register_et"
+        android:hint="@string/input_phone" />
+    
+ -->
+    
+    <Button 
+        style="@style/match_wrap"
+        android:text="@string/title_activity_register"
+        android:layout_margin="20dp"
+        android:onClick="register"
+        android:background="@color/blue_bt_login"/>
+
+</LinearLayout>

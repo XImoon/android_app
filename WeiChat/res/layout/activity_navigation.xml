@@ -1,0 +1,153 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        style="@style/match_wrap"
+        android:background="@drawable/title_bar" >
+
+        <TextView
+            style="@style/wrap_content"
+            android:layout_centerInParent="true"
+            android:padding="10dp"
+            android:text="@string/navigation_friends"
+            android:textColor="#ffffff"
+            android:textSize="18sp" />
+
+        <Button
+            style="@style/wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="#00000000"
+            android:onClick="add"
+            android:padding="10dp"
+            android:text="@string/navigation_add"
+            android:textColor="#ffffff"
+            android:textSize="15sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        style="@style/match_wrap"
+        android:orientation="horizontal"
+        android:layout_marginTop="2dp"
+        android:padding="2dp" >
+            
+            <com.ximoon.weichat.view.ClearEditText
+            android:id="@+id/filter_edit"
+            android:layout_gravity="center"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            style="@style/match_wrap"
+            android:layout_weight="1"
+           
+            android:background="@drawable/search_bar_edit_selector"
+            android:drawableLeft="@drawable/search_bar_icon_normal"
+            android:hint="@string/navigation_search"
+            android:singleLine="true"
+            android:textSize="15.0dip" />
+
+        <TextView
+            style="@style/wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="0"
+            android:gravity="center"
+            android:onClick="go"
+            android:text="@string/navigation_search"
+            android:textColor="@color/blue_bt_register"
+            android:textSize="13sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/match_wrap"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <TextView
+            style="@style/wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:drawablePadding="5dp"
+            android:drawableTop="@drawable/online"
+            android:gravity="center"
+            android:onClick="online"
+            android:padding="10dp"
+            android:text="@string/navigation_online"
+            android:textSize="12sp" />
+
+        <TextView
+            style="@style/wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:drawablePadding="5dp"
+            android:drawableTop="@drawable/offline"
+            android:gravity="center"
+            android:onClick="offline"
+            android:padding="10dp"
+            android:text="@string/navigation_all"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <!-- <com.ximoon.weichat.view.ClearEditText
+            android:id="@+id/filter_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dip"
+            android:background="@drawable/search_bar_edit_selector"
+            android:drawableLeft="@drawable/search_bar_icon_normal"
+            android:hint="请输入关键字"
+            android:singleLine="true"
+            android:textSize="15.0dip" /> -->
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <ListView
+                android:id="@+id/navigation_lv_friends_all"
+                style="@style/match_wrap"
+                android:layout_margin="5dp"
+                android:visibility="gone" />
+
+            <ListView
+                android:id="@+id/navigation_lv_friends"
+                style="@style/match_wrap"
+                android:layout_margin="5dp"
+                android:divider="@null" />
+
+            <TextView
+                android:id="@+id/dialog"
+                android:layout_width="80.0dip"
+                android:layout_height="80.0dip"
+                android:layout_gravity="center"
+                android:background="@drawable/show_head_toast_bg"
+                android:gravity="center"
+                android:textColor="#ffffffff"
+                android:textSize="30.0dip"
+                android:visibility="invisible" />
+
+            <com.ximoon.weichat.view.SideBar
+                android:id="@+id/sidrbar"
+                android:layout_width="30.0dip"
+                android:layout_height="fill_parent"
+                android:layout_gravity="right|center" />
+        </FrameLayout>
+    </LinearLayout>
+
+</LinearLayout>

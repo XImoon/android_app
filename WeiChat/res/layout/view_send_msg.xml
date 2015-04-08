@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:padding="3dp" >
+
+    <TextView
+        android:id="@+id/msg_tv_content"
+        style="@style/msg_box"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="20dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/send_box" />
+
+    <TextView
+        style="@style/wrap_content"
+        android:id="@+id/msg_tv_send_time"
+        android:layout_alignParentTop="true"
+        android:layout_above="@id/msg_tv_content"
+        android:paddingBottom="20dp"
+        android:gravity="center_vertical"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="20dp"
+        android:textColor="@android:color/holo_green_light"
+        android:textSize="12sp" />
+
+</RelativeLayout>

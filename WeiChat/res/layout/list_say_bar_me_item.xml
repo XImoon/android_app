@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  android:layout_marginLeft="10dp"
+  android:orientation="vertical"
+  android:gravity="left"
+  >
+  <LinearLayout
+	          
+      android:id="@+id/data_update_layout"
+      android:orientation="horizontal"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginLeft="3dp"
+      android:layout_alignParentRight="true"
+      android:layout_marginRight="5dp"
+      android:paddingTop="2dp"
+ 	>  
+ 	
+      <TextView
+                android:id="@+id/username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:paddingTop="2dp"
+                android:gravity="right"
+                android:text="回复人名字"
+                android:textColor="@color/gray"
+                android:textSize="13sp" />
+      
+      <ImageView
+		      android:id="@+id/item_update_img"
+		      android:layout_width="wrap_content"
+		      android:layout_height="wrap_content"
+		      android:maxWidth="20dp"
+		      android:maxHeight="20dp"
+		      android:adjustViewBounds="true"
+		      android:src="@drawable/btn_pb_add_expression"
+		      android:visibility="visible"
+		  	/>
+  			
+      </LinearLayout>
+  
+	      <TextView
+	          android:id="@+id/messagedetail_row_text"
+	          android:layout_width="wrap_content"
+	          android:layout_height="wrap_content"
+	         
+	          android:gravity="left"
+	         
+	          android:text="hhhh"
+	          android:paddingLeft="10dp"
+              android:paddingRight="10dp"
+              android:paddingBottom="20dp"
+	          android:layout_marginLeft="5dp"
+	          android:layout_marginBottom="5dp"
+	          android:layout_marginRight="5dp"
+	          android:textColor="@color/black"
+	          android:textSize="15sp"
+	      />
+	      <LinearLayout
+	          
+      android:id="@+id/data_update_layout"
+      android:orientation="horizontal"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginLeft="3dp"
+      android:layout_alignParentRight="true"
+      android:layout_marginRight="5dp"
+      android:paddingTop="2dp"
+ 	>  
+ 	<TextView
+                android:id="@+id/messagedetail_row_layer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:paddingTop="2dp"
+                android:gravity="right"
+                android:text="第几楼"
+                android:textColor="@color/gray"
+                android:textSize="13sp" />
+ 	
+      <TextView
+                android:id="@+id/messagedetail_row_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:paddingTop="2dp"
+                android:gravity="right"
+                android:text="2013-04-08 10:16:22"
+                android:textColor="@color/gray"
+                android:textSize="13sp" />
+      
+      
+  			
+      </LinearLayout>
+  
+</LinearLayout>

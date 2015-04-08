@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:padding="10dip"
+    android:background="@drawable/bgimg"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:layout_weight="1"
+      android:orientation="vertical" >
+
+      <TextView
+          android:id="@+id/textViewTorB"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_gravity="center"
+          android:text="添加真心话/大冒险"
+          android:textColor="#FF00FF"
+          android:textSize="30sp" />
+
+      <EditText
+          android:id="@+id/addtitle"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_gravity="left|top"
+          android:hint="在此输入……"
+          android:textColor="#00CCFF"
+          android:textSize="20sp" />
+  </LinearLayout>
+
+    <LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="10dip"
+    android:layout_weight="3" >
+
+	    <LinearLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:orientation="horizontal"
+	    android:layout_weight="1"
+	    android:gravity="center_horizontal" >
+        
+        <RadioGroup
+            android:id="@+id/radioGroupadd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+	  		android:orientation="horizontal"
+            android:gravity="center_horizontal" >
+
+            <RadioButton
+                android:id="@+id/radioyb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+   		    	android:textColor="#FF00FF"
+        	 	android:textSize="20sp"
+                android:text="一般    " />
+
+            <RadioButton
+                android:id="@+id/radiocj"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+   		    	android:textColor="#FF00FF"
+        	 	android:textSize="20sp"
+                android:text="刺激    " />
+
+            <RadioButton
+                android:id="@+id/radiofk"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+   		    	android:textColor="#FF00FF"
+        	 	android:textSize="20sp"
+                android:text="疯狂" />
+        </RadioGroup>
+        
+	</LinearLayout>
+	 <LinearLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:orientation="horizontal"
+	    android:layout_weight="1"
+	    android:gravity="center_horizontal" >
+          <ImageButton
+            android:id="@+id/imageButtoncancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/cancel" />
+          
+        <ImageButton
+            android:id="@+id/imageButtonadd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/add" />
+    
+   </LinearLayout>
+</LinearLayout>
+</LinearLayout>
